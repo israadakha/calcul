@@ -7,27 +7,34 @@ public class calcul : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       int sum();
-        int div();
-        int prod();
+        somme(1,2);
+        divi(1,3) ;
+        prod(2,5) ;
         
     }
-    int sum(int a,int b)
+    int somme(int a, int b)
     {
         Debug.Log(a + b);
-        
-
+        return(a + b);
     }
-    int div(int a, int b)
+    int divi (int a, int b)
     {
-        if (b != 0){ Debug.Log(a / b); }
-        else { Debug.Log("erreur"); }
+        if (b != 0)
+        {
+            Debug.Log(a / b); 
+            return(a / b);
+        }
+        else 
+        {
+            Debug.Log("erreur");
+            return 1;
+        }
         
 
     }
     int prod(int a, int b)
     {
-        Debug.Log(a * b);
+        return(a * b);
 
     }
 }
